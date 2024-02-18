@@ -566,3 +566,148 @@ Command   cosim_design done; 24.876 sec.
 INFO: [HLS 200-111] Finished Command cosim_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 24.876 seconds; current allocated memory: 10.777 MB.
 Command ap_source done; 25.873 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1 opened at Sun Feb 18 11:42:39 -0700 2024
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z020clg400-1 
+Execute       create_platform xc7z020clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2023.2\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2023.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command       create_platform done; 0.509 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z020-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 0.657 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -tool=xsim 
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+Execute     config_cosim -tool=xsim 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -trace_level=all 
+INFO: [HLS 200-1464] Running solution command: config_cosim -trace_level=all
+Execute     config_cosim -trace_level=all 
+Execute     send_msg_by_id INFO @200-1464@%s config_cosim -wave_debug=1 
+INFO: [HLS 200-1464] Running solution command: config_cosim -wave_debug=1
+Execute     config_cosim -wave_debug=1 
+Command   open_solution done; 0.757 sec.
+Execute   set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+Execute     create_platform xc7z020clg400-1 -board  
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.143 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   config_cosim -tool xsim -trace_level all -wave_debug 
+INFO: [HLS 200-1510] Running: config_cosim -tool xsim -trace_level all -wave_debug 
+Execute   cosim_design -wave_debug -trace_level all 
+INFO: [HLS 200-1510] Running: cosim_design -wave_debug -trace_level all 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     send_msg_by_id WARNING @200-626@ 
+WARNING: [HLS 200-626] This design is unable to schedule all read ports in the first II cycle. The RTL testbench may treat the design as non-pipelined
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2023.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/matrix_mult_tb.cpp C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult_tb.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult_tb.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult_tb.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.895 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: TB processing: C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/matrix_mult.cpp C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult.cpp_pre.cpp.tb.cpp std=c++14 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2023.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/./sim/autowrap/testbench/matrix_mult.cpp_pre.cpp.tb.cpp -- -std=c++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.786 sec.
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.212 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.DependenceCheck.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+Execute     source C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/.autopilot/db/matrix_mult.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
