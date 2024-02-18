@@ -1,0 +1,84 @@
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: matrix_mult.cpp, Line: 8, Column: 0 }
+Function:        _Z11matrix_multPA16_7ap_uintILi8EES2_PA16_S_ILi32EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            prod
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: matrix_mult.cpp, Line: 8, Column: 0 }
+Function:        _Z11matrix_multPA16_7ap_uintILi8EES2_PA16_S_ILi32EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            b
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: matrix_mult.cpp, Line: 8, Column: 0 }
+Function:        _Z11matrix_multPA16_7ap_uintILi8EES2_PA16_S_ILi32EE
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        bram
+  - String:          ' variable '''
+  - Name:            a
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '8'
+  - String:          '-bits'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        Col
+  - String:          '> at '
+  - LoopLoc:         'matrix_mult.cpp:12:12'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: matrix_mult.cpp, Line: 15, Column: 19 }
+Function:        _Z11matrix_multPA16_7ap_uintILi8EES2_PA16_S_ILi32EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Product
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: matrix_mult.cpp, Line: 8, Column: 0 }
+Function:        _Z11matrix_multPA16_7ap_uintILi8EES2_PA16_S_ILi32EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         'matrix_mult.cpp:15:19'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrix_mult
+  - String:          ''' completely with a factor of '
+  - Factor:          '16'
+...

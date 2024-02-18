@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="matrix_mult.cpp" path="C:\Users\itsru\Desktop\FPGA\CEN-598-Reconfigurable-Computing\Lab2-GEMM-accelerator-using-High-Level-Synthesis\matrix_mult.cpp"/>
+    <originFiles name="matrix_mult.h" path="C:\Users\itsru\Desktop\FPGA\CEN-598-Reconfigurable-Computing\Lab2-GEMM-accelerator-using-High-Level-Synthesis\matrix_mult.h"/>
+  </source>
+  <testbench>
+    <originFiles name="matrix_mult_tb.cpp" path="C:\Users\itsru\Desktop\FPGA\CEN-598-Reconfigurable-Computing\Lab2-GEMM-accelerator-using-High-Level-Synthesis\matrix_mult_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
