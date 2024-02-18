@@ -15,3 +15,5 @@ start_gui
 source xsim.dir/matrix_mult/xsim_script.tcl
 open_wave_config matrix_mult_dataflow_ana.wcfg
 source matrix_mult.tcl
+save_wave_config {C:/Users/itsru/Desktop/FPGA/CEN-598-Reconfigurable-Computing/Lab2-GEMM-accelerator-using-High-Level-Synthesis/hls_gemm/solution1/sim/verilog/matrix_mult.wcfg}
+close_sim

@@ -12,9 +12,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="8.013889 us"></ZoomEndTime>
-      <Cursor1Time time="0.000000 us"></Cursor1Time>
+      <ZoomStartTime time="93.600 ns"></ZoomStartTime>
+      <ZoomEndTime time="187.201 ns"></ZoomEndTime>
+      <Cursor1Time time="135.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="245"></NameColumnWidth>
@@ -68,9 +68,11 @@
    <wvobject fp_name="group17" type="group">
       <obj_property name="label">Design Top Signals</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group18" type="group">
          <obj_property name="label">C Outputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="group19" type="group">
             <obj_property name="label">return(memory)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -101,6 +103,7 @@
       <wvobject fp_name="group24" type="group">
          <obj_property name="label">C Inputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="group25" type="group">
             <obj_property name="label">return(memory)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -173,6 +176,7 @@
       <wvobject fp_name="group38" type="group">
          <obj_property name="label">Block-level IO Handshake</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/apatb_matrix_mult_top/AESL_inst_matrix_mult/ap_start" type="logic">
             <obj_property name="ElementShortName">ap_start</obj_property>
             <obj_property name="ObjectShortName">ap_start</obj_property>
@@ -193,6 +197,7 @@
       <wvobject fp_name="group43" type="group">
          <obj_property name="label">Reset</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/apatb_matrix_mult_top/AESL_inst_matrix_mult/ap_rst" type="logic">
             <obj_property name="ElementShortName">ap_rst</obj_property>
             <obj_property name="ObjectShortName">ap_rst</obj_property>
@@ -201,6 +206,7 @@
       <wvobject fp_name="group45" type="group">
          <obj_property name="label">Clock</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/apatb_matrix_mult_top/AESL_inst_matrix_mult/ap_clk" type="logic">
             <obj_property name="ElementShortName">ap_clk</obj_property>
             <obj_property name="ObjectShortName">ap_clk</obj_property>
@@ -210,6 +216,7 @@
    <wvobject fp_name="group47" type="group">
       <obj_property name="label">Test Bench Signals</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group48" type="group">
          <obj_property name="label">Internal Signals</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -255,6 +262,7 @@
       <wvobject fp_name="group57" type="group">
          <obj_property name="label">C Outputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="group58" type="group">
             <obj_property name="label">return(memory)</obj_property>
             <obj_property name="DisplayName">label</obj_property>
@@ -285,6 +293,7 @@
       <wvobject fp_name="group63" type="group">
          <obj_property name="label">C Inputs</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="group64" type="group">
             <obj_property name="label">return(memory)</obj_property>
             <obj_property name="DisplayName">label</obj_property>

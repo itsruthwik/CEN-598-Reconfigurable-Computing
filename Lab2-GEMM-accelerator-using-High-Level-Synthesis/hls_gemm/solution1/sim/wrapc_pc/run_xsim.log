@@ -1,3 +1,4 @@
+TEST PASSED
 
 C:\Users\itsru\Desktop\FPGA\CEN-598-Reconfigurable-Computing\Lab2-GEMM-accelerator-using-High-Level-Synthesis\hls_gemm\solution1\sim\verilog>set PATH= 
 
@@ -62,3 +63,5 @@ ECHO is off.
     ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 
 start_gui
+INFO: [Common 17-206] Exiting xsim at Sun Feb 18 11:59:53 2024...
+TEST PASSED
